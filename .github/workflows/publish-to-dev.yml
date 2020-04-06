@@ -1,4 +1,4 @@
-name: Publish to dev site on push exept on master
+name: Publish to Dev
 on: 
   push:
     branches-ignore:
@@ -15,7 +15,7 @@ jobs:
     - name: FTP-Deploy-To-Dev
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        local-dir: ./enfold-child
+        local-dir: ./enfold-child/
         ftp-server: ${{ secrets.FTP_SERVER_DEV }}
         ftp-username: ${{ secrets.FTP_USER_DEV }}
         ftp-password: ${{ secrets.FTP_PASSWORD_DEV }}
