@@ -1,7 +1,7 @@
 name: Publish to Prd
 on: 
   push:
-    branches-ignore:
+    branches:
       - master
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
     - name: FTP-Deploy-To-Prd
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        local-dir: ./enfold-child/
+        local-dir: enfold-child/
         ftp-server: ${{ secrets.FTP_SERVER_PRD }}
         ftp-username: ${{ secrets.FTP_USER_PRD }}
         ftp-password: ${{ secrets.FTP_PASSWORD_PRD }}
