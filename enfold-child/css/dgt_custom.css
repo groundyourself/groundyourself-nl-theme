@@ -1,5 +1,5 @@
 
-
+/* remove whitespace in pages */
 #after_submenu_1,
 #after_submenu_2,
 #after_submenu_3,
@@ -13,6 +13,8 @@
 #after_section_11{
   display:none;
 }
+
+/* remove post meta info for pages */ 
 
 .postid-3242 .post-meta-infos
 {
@@ -91,11 +93,19 @@
     display:none !important;
 }
 
+/* remove post date for learndash pages */
+#top.learndash-cpt .post-meta-infos 
+{
+    display:none !important;
+}
+
+/* remove grades */
 #learndash_course_status,
 .graded-disclaimer {
     display:none !important;
 }
 
+/* fix sizing and placement of learndash buttons */
 .wpProQuiz_button:hover {
     text-transform: capitalize !important;
     font-size: 1em;
