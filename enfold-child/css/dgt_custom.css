@@ -27,6 +27,11 @@
           display:none;
       }
   }
+
+#after_submenu_6{
+    display:none;
+}
+
 .postid-3242 .post-meta-infos
 {
     display:none !important;
