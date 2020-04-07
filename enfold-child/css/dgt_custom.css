@@ -1,0 +1,139 @@
+
+@media only screen and (max-width: 600px) {
+    #after_submenu_1 {
+          display:none;
+      }
+      #after_submenu_2 {
+          display:none;
+      }
+      #after_submenu_3 {
+          display:none;
+      }
+      #after_submenu_4{
+          display:none;
+      }
+      #after_submenu_5{
+          display:none;
+      }
+      
+      #after_section_6{
+          display:none;
+      }
+      
+      #after_section_3{
+          display:none;
+      }
+      #after_section_4{
+          display:none;
+      }
+  }
+.postid-3242 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3245 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3247 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3249 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5764 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5777 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3332 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3334 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3336 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3352 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-3356 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5212 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5213 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5215 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5217 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5219 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5222 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5224 .post-meta-infos
+{
+    display:none !important;
+}
+.postid-5226 .post-meta-infos
+{
+    display:none !important;
+}
+
+#learndash_course_status,
+.graded-disclaimer {
+    display:none !important;
+}
+
+.wpProQuiz_button:hover {
+    text-transform: capitalize !important;
+    font-size: 1em;
+    padding: .5em 1em !important;
+}
+
+.gy_course_button a {
+    font-size: 1.15em !important;
+    margin-top: 15px !important;
+    font-weight: bold !important;
+}
+
+.sfwd-mark-complete {
+    display: flex !important;
+}
+
+
+#learndash_back_to_lesson a {
+    font-size: 0.7em;
+    background-color: #6d8575 !important;
+}
+
+.learndash_mark_complete_button {
+    margin-left: auto !important;
+    border-radius: 4px !important;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
