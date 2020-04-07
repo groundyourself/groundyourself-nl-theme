@@ -21,9 +21,9 @@ function dgt_enqueue_styles() {
 add_filter( 'avf_post_nav_entries', 'dgt_customization_postnav', 10, 2);
 function dgt_customization_postnav($entries, $settings)
 {
-    if (preg_match("/^sfwd-/g", $settings['type'], $match){
-        $entries["prev"] = null;
-        $entries["next"] = null;
+    if (preg_match("/^sfwd-/g", $settings['type'])){
+        $entries['prev'] = null;
+        $entries['next'] = null;
     }
     return $entries;
 }
