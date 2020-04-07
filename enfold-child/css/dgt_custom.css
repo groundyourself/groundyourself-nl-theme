@@ -1,34 +1,16 @@
 
 
-#after_submenu_1 {
-    display:none;
-}
-#after_submenu_2 {
-    display:none;
-}
-#after_submenu_3 {
-    display:none;
-}
-#after_submenu_4{
-    display:none;
-}
-#after_submenu_5{
-    display:none;
-}
-
-#after_submenu_6{
-    display:none;
-}
-
+#after_submenu_1,
+#after_submenu_2,
+#after_submenu_3,
+#after_submenu_4,
+#after_submenu_5,
+#after_submenu_6,
+#after_section_3,
+#after_section_4,
+#after_section_5,
 #after_section_6{
   display:none;
-}
-
-#after_section_3{
-    display:none;
-}
-#after_section_4{
-    display:none;
 }
 
 .postid-3242 .post-meta-infos
