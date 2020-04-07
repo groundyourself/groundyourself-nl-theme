@@ -1,35 +1,33 @@
 
-@media only screen and (max-width: 600px) {
-    #after_submenu_1 {
-        display:none;
-    }
-    #after_submenu_3 {
-        display:none;
-    }
-    #after_submenu_4{
-        display:none;
-    }
-    #after_submenu_5{
-      display:none;
-    }
-    
-    #after_section_6{
-      display:none;
-    }
-    
-    #after_section_3{
-        display:none;
-    }
-    #after_section_4{
-        display:none;
-    }
+
+#after_submenu_1 {
+    display:none;
 }
-    
 #after_submenu_2 {
+    display:none;
+}
+#after_submenu_3 {
+    display:none;
+}
+#after_submenu_4{
+    display:none;
+}
+#after_submenu_5{
     display:none;
 }
 
 #after_submenu_6{
+    display:none;
+}
+
+#after_section_6{
+  display:none;
+}
+
+#after_section_3{
+    display:none;
+}
+#after_section_4{
     display:none;
 }
 
