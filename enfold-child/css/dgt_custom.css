@@ -16,78 +16,24 @@
 
 /* remove post meta info for pages */ 
 
-.postid-3242 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3245 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3247 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3249 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5764 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5777 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3332 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3334 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3336 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3352 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-3356 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5212 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5213 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5215 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5217 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5219 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5222 .post-meta-infos
-{
-    display:none !important;
-}
-.postid-5224 .post-meta-infos
-{
-    display:none !important;
-}
+.postid-3242 .post-meta-infos,
+.postid-3245 .post-meta-infos,
+.postid-3247 .post-meta-infos,
+.postid-3249 .post-meta-infos,
+.postid-5764 .post-meta-infos,
+.postid-5777 .post-meta-infos.
+.postid-3332 .post-meta-infos,
+.postid-3334 .post-meta-infos,
+.postid-3336 .post-meta-infos,
+.postid-3352 .post-meta-infos,
+.postid-3356 .post-meta-infos,
+.postid-5212 .post-meta-infos,
+.postid-5213 .post-meta-infos,
+.postid-5215 .post-meta-infos,
+.postid-5217 .post-meta-infos,
+.postid-5219 .post-meta-infos,
+.postid-5222 .post-meta-infos,
+.postid-5224 .post-meta-infos,
 .postid-5226 .post-meta-infos
 {
     display:none !important;
@@ -99,7 +45,7 @@
     display:none !important;
 }
 
-/* remove grades */
+/* remove grade disclaimer */
 #learndash_course_status,
 .graded-disclaimer {
     display:none !important;
@@ -108,7 +54,7 @@
 /* fix sizing and placement of learndash buttons */
 .wpProQuiz_button:hover {
     text-transform: capitalize !important;
-    font-size: 1em;
+    font-size: 1em !important;
     padding: .5em 1em !important;
 }
 
