@@ -21,7 +21,7 @@
 .postid-3247 .post-meta-infos,
 .postid-3249 .post-meta-infos,
 .postid-5764 .post-meta-infos,
-.postid-5777 .post-meta-infos.
+.postid-5777 .post-meta-infos,
 .postid-3332 .post-meta-infos,
 .postid-3334 .post-meta-infos,
 .postid-3336 .post-meta-infos,
@@ -79,4 +79,10 @@
     border-radius: 4px !important;
     margin-top: 100px;
     margin-bottom: -30px;
+}
+
+/* restrict amount of days shown in momoyoga plugin */
+
+.momoyoga-section:nth-child(1n +7) {
+    display: none;
 }
