@@ -104,3 +104,13 @@
 #cmplz-document h2, #cmplz-document h3 {
 	border-bottom: none;
 }
+
+/* add styling to learndash profile */
+
+#learndash_profile .learndash_profile_quizzes {
+    display: none;
+}
+
+#customer_login h2 {
+    padding: 20px 20px 0px 20px;
+}
