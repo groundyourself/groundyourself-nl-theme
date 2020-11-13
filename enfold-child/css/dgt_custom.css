@@ -107,10 +107,21 @@
 
 /* add styling to learndash profile */
 
+#customer_login h2 {
+    padding: 20px 20px 0px 20px;
+}
+
+
+#learndash_profile .learndash-course-link a {
+    font-weight: bold !important;
+    margin-left: 13px;
+}
+
 #learndash_profile .learndash_profile_quizzes {
     display: none;
 }
 
-#customer_login h2 {
-    padding: 20px 20px 0px 20px;
+#learndash_profile #course_list .flip .right {
+    line-height: normal;
+    padding: 5px 0px;
 }
