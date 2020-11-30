@@ -133,7 +133,7 @@
 }
 
 .woocommerce-checkout .input-text ,
-.woocommerce-checkout payment_box select {
+.woocommerce-checkout .payment_box select {
     border-color: #BECAC6 !important;
     border-width: medium !important;
     border-radius: 5px !important;
