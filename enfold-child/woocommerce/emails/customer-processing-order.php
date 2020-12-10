@@ -27,7 +27,8 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php /* translators: %s: Customer first name */ ?>
 <p><?php printf( 'Lieve %s,', esc_html( $order->get_billing_first_name() ) ); ?></p>
 <p><?php printf( 'Dankjewel voor je bestelling! Leuk dat we samen aan de slag gaan. Je bestelling met de code #%s is ontvangen en wordt nu verwerkt.', esc_html( $order->get_order_number() ) ); ?></p>
-<p><?php printf( esc_html('Ik zal snel contact met je opnemen voor het vervolg van jouw reis. Dus houd je mailbox gaten. Heb je na drie werkdagen nog niks ontvangen, kijk eerst even in je spambox. Ook daar niks gevonden? Neem dan contact met me op via info@groundyourself.nl.')); ?></p>
+<p><?php printf( 'Ik zal snel contact met je opnemen voor het vervolg van jouw reis. Dus houd je mailbox gaten. Heb je na drie werkdagen nog niks ontvangen, kijk eerst even in je spambox. Ook daar niks gevonden? Neem dan contact met me op via'); ?>
+<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a></p>
 <p><h2><?php printf(esc_html('Jouw bestellingsoverzicht')); ?></h2></p>
 <?php
 
@@ -58,16 +59,18 @@ if ( $additional_content ) {
 }
 
 ?>
-<p><?php printf( esc_html('Mocht je vragen hebben of ergens tegenaan lopen, let me know. Stuur me een bericht via info@groundyourself.nl. Ik help je graag op weg.')); ?></p>
+<p><?php printf( esc_html('Mocht je vragen hebben of ergens tegenaan lopen, let me know. Stuur me een bericht via')); ?>
+<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>
+<?php printf( esc_html('. Ik help je graag op weg.')); ?></p>
 <p><?php printf( esc_html('Heel veel plezier op je reis!')); ?></p>
 <p><?php printf( esc_html('Warme groet,')); ?></p>
 <p><?php printf( esc_html('Esther')); ?></p>
 
 <p>
 <strong>Ground Yourself</strong><br />
-<a href='tel:0031654340961'>0650495212</a>
-<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>
-<a href='https://groundyourself.nl'>groundyourself.nl</a>
+<a href='tel:0031654340961'>0650495212</a><br />
+<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a><br />
+<a href='https://groundyourself.nl'>groundyourself.nl</a><br />
 <?php
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
