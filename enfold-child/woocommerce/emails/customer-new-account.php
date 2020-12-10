@@ -26,11 +26,11 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 </div>
 <p>
 	<h3>AccountGegevens</h3><
-	<?php printf( 'Gebruikersnaam: %s', esc_html( $user_login ) ); ?><br />
+	<?php printf( esc_html__('Gebruikersnaam: %s', 'woocommerce'), esc_html( $user_login ) ); ?><br />
 	<?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
 		<?php printf( esc_html__( 'Gegenereerd wachtwoord: %s', 'woocommerce' ), '<strong>' . esc_html( $user_pass ) . '</strong>' ); ?><br />
 	<?php endif; ?>
-	<?php printf('Account omgeving: %s',make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) )); ?>
+	<?php printf('Account omgeving: %s',make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) )); ?><br />
 </p>
 <?php
 /**
