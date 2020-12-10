@@ -71,7 +71,7 @@ body {
 	line-height: 100%;
 	vertical-align: middle;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	padding: 46px 48px;
+	padding: 26px 48px;
 }
 
 #template_header h1,
@@ -81,8 +81,13 @@ body {
 }
 
 #header_wrapper {
-	padding: none;
+	padding-left: 65px;
 }
+
+#header_wrapper h1 {
+	margin-top: -30px;
+}
+
 #template_header_image img {
 	margin-left: 0;
 	margin-right: 0;
