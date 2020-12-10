@@ -27,3 +27,8 @@ function dgt_customization_postnav($entries, $settings)
     }
     return $entries;
 }
+
+/*
+  defer sendeing of emails from woocommerce
+*/
+add_filter( 'woocommerce_defer_transactional_emails', '__return_true' );

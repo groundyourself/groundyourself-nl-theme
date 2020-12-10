@@ -42,7 +42,7 @@ if ( $additional_content ) {
 
 
 ?>
-<p><?php printf( esc_html('Mocht je vragen hebben of ergens tegenaan lopen. Stuur me een bericht via')); ?>
+<p><?php printf( esc_html('Mocht je vragen hebben of ergens tegenaan lopen. Stuur me een bericht via ')); ?>
 <a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>
 <?php printf( esc_html('. Ik help je graag op weg.')); ?></p>
 <p><?php printf( esc_html('Heel veel plezier op je reis!')); ?></p>
