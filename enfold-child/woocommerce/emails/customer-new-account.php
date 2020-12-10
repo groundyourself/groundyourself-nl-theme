@@ -26,21 +26,12 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 </div>
 <p>
 	<h3>AccountGegevens</h3><
-	<?php printf( esc_html__( 'Gebruikersnaam: %s', 'woocommerce' ), esc_html( $user_login ) ); ?><br />
+	<?php printf( 'Gebruikersnaam: %s', esc_html( $user_login ) ); ?><br />
 	<?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
 		<?php printf( esc_html__( 'Gegenereerd wachtwoord: %s', 'woocommerce' ), '<strong>' . esc_html( $user_pass ) . '</strong>' ); ?><br />
 	<?php endif; ?>
 	<?php printf('Account omgeving: %s',make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) )); ?>
 </p>
-
-
-<?php /* translators: %1$s: Site title, %2$s: Username, %3$s: My account link */ ?>
-<p><?php printf( esc_html__( 'Thanks for creating an account on %1$s. Your username is %2$s. You can access your account area to view orders, change your password, and more at: %3$s', 'woocommerce' ), esc_html( $blogname ), '<strong>' . esc_html( $user_login ) . '</strong>', make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-<?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
-	<?php /* translators: %s: Auto generated password */ ?>
-	<p><?php printf( esc_html__( 'Your password has been automatically generated: %s', 'woocommerce' ), '<strong>' . esc_html( $user_pass ) . '</strong>' ); ?></p>
-<?php endif; ?>
-
 <?php
 /**
  * Show user-defined additional content - this is set in each email's settings.
@@ -48,5 +39,21 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
+
+
+?>
+<p><?php printf( esc_html('Mocht je vragen hebben of ergens tegenaan lopen. Stuur me een bericht via')); ?>
+<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>
+<?php printf( esc_html('. Ik help je graag op weg.')); ?></p>
+<p><?php printf( esc_html('Heel veel plezier op je reis!')); ?></p>
+<p><?php printf( esc_html('Warme groet,')); ?></p>
+<p><?php printf( esc_html('Esther')); ?></p>
+
+<p>
+<strong>Ground Yourself</strong><br />
+<a href='tel:0031654340961'>0650495212</a><br />
+<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a><br />
+<a href='https://groundyourself.nl'>groundyourself.nl</a><br />
+<?php
 
 do_action( 'woocommerce_email_footer', $email );
