@@ -23,7 +23,13 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p><?php printf( esc_html__( 'Lieve %s,', 'woocommerce' ), esc_html( $user_login ) ); ?></p>
 <p><?php printf( 'Welkom bij Ground Yourself! Leuk dat je een account hebt aangemaakt en je mee op reis gaat naar jouw kern, wie je diep van binnen bent.'); ?></p>
 <p><?php printf( 'In deze mail vind je jouw gegevens om in te loggen in jouw account. Hier staat een overzicht van de producten die je hebt aangeschaft, je facturen, etc. Automatisch is er een wachtwoord voor je aangemaakt. Je kan dit wachtwoord zelf aanpassen in je account of door op het inlogscherm te kiezen voor de optie ‘wachtwoord vergeten’.'); ?></p>
-
+<p>
+	<h3>AccountGegevens</h3>
+	<?php printf( esc_html__( 'Gebruikersnaam %s,', 'woocommerce' ), esc_html( $user_login ) ); ?>
+	<?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
+		<?php printf( esc_html__( 'Gegenereerd wachtwoord: %s', 'woocommerce' ), '<strong>' . esc_html( $user_pass ) . '</strong>' ); ?>
+	<?php endif; ?>
+</p>
 <?php /* translators: %1$s: Site title, %2$s: Username, %3$s: My account link */ ?>
 <p><?php printf( esc_html__( 'Thanks for creating an account on %1$s. Your username is %2$s. You can access your account area to view orders, change your password, and more at: %3$s', 'woocommerce' ), esc_html( $blogname ), '<strong>' . esc_html( $user_login ) . '</strong>', make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 <?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
