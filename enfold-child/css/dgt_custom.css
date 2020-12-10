@@ -132,11 +132,20 @@
     display: none;
 }
 
-.woocommerce-checkout .input-text ,
-.woocommerce-checkout .payment_box select {
+#top .main_color .input-text, 
+#top .main_color input[type='text'], 
+#top .main_color input[type='input'], 
+#top .main_color input[type='password'], 
+#top .main_color input[type='email'], 
+#top .main_color input[type='number'], 
+#top .main_color input[type='url'], 
+#top .main_color input[type='tel'], 
+#top .main_color input[type='search'], 
+#top .main_color textarea, #top .main_color select {
     border-color: #BECAC6 !important;
     border-width: medium !important;
     border-radius: 5px !important;
+    color: #525252;
 }
 
 /* woocommerce loader screen: */
