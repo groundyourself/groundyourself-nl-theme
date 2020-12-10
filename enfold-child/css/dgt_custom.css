@@ -152,19 +152,20 @@
 .woocommerce .blockUI.blockOverlay:before,.woocommerce .loader:before {
     height: 3em;
     width: 3em;
-    position: fixed;
+    position: relative!important;
+    display: none!important;
     top: 50%;
     left: 50%;
     margin-left: -.5em;
     margin-top: -.5em;
-    display: block;
     content: "";
     -webkit-animation: none;
     -moz-animation: none;
     animation: none;
-    background: url('http://test-site.com/wp-content/themes/boss-child/images/spinning-logo.gif') center center;
+    background: url('https://groundyourself.nl/wp-content/themes/enfold-child/images/spinner.gif') center center;
     background-size: cover;
     line-height: 1;
     text-align: center;
     font-size: 2em;
 }
+
