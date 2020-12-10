@@ -25,11 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
-<p><?php printf( esc_html__( 'Lieve %s,'), esc_html( $order->get_billing_first_name() ) ); ?></p>
+<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
 <?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Dankjewel voor je bestelling! Leuk dat we samen aan de slag gaan. Je bestelling met de code #%s is ontvangen en wordt nu verwerkt. ' ), esc_html( $order->get_order_number() ) ); ?></p>
-<p><?php printf( esc_html__( 'Ik zal snel contact met je opnemen voor het vervolg van jouw reis. Dus houd je mailbox gaten. Heb je na drie werkdagen nog niks ontvangen, kijk eerst even in je spambox. Ook daar niks gevonden? Neem dan contact met me op via')); ?>
-<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>. 
+<p><?php printf( esc_html__( 'Just to let you know — we\'ve received your order #%s, and it is now being processed:', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
+
 <?php
 
 /*
@@ -51,21 +50,6 @@ do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, 
  */
 do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
 
-?>
-
-<p>Mocht je vragen hebben of ergens tegenaan lopen, let me know. Stuur me een bericht via <a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>. Ik help je graag op weg.</p>
-<p>Heel veel plezier op je reis!</p>
-<p>Warme groet,</p>
-<p>Esther </p>
-
-<p>
-<strong>Ground Yourself</strong> <br />
-<a href="tel:0031650495212">0650495212</a> <br/>
-<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>
-<a href='https://groundyourself.nl'>groundyourself.nl</a>
-</p>
-
-<?php>
 /**
  * Show user-defined additional content - this is set in each email's settings.
  */

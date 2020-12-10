@@ -20,30 +20,13 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer username */ ?>
-<p><?php printf( esc_html__( 'lieve %s,'), esc_html( $user_login ) ); ?></p>
+<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $user_login ) ); ?></p>
 <?php /* translators: %1$s: Site title, %2$s: Username, %3$s: My account link */ ?>
-<p><?php printf( esc_html__( 'Welkom bij %1$s!. Leuk dat je een account hebt aangemaakt en je mee op reis gaat naar jouw kern, wie je diep van binnen bent.', esc_html( $blogname ))); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-<p><?php printf( esc_html__( 'In deze mail vind je jouw gegevens om in te loggen in jouw account. Hier staat een overzicht van de producten die je hebt aangeschaft, je facturen, etc. Automatisch is er een wachtwoord voor je aangemaakt. Je kan dit wachtwoord zelf aanpassen in je account of door op het inlogscherm te kiezen voor de optie wachtwoord vergeten. ');?></p>
-
-<p><strong><?php printf( esc_html__( 'AccountGegevens') ); ?></strong></p>
-<p><?php printf( esc_html__( 'Gebruikersnaam :%s,' ), '<strong>' . esc_html( $user_login ) . '</strong>' ); ?></p>
+<p><?php printf( esc_html__( 'Thanks for creating an account on %1$s. Your username is %2$s. You can access your account area to view orders, change your password, and more at: %3$s', 'woocommerce' ), esc_html( $blogname ), '<strong>' . esc_html( $user_login ) . '</strong>', make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 <?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
 	<?php /* translators: %s: Auto generated password */ ?>
-	<p><?php printf( esc_html__( 'Automatisch gegenereerd wachtwoord: %s', 'woocommerce' ), '<strong>' . esc_html( $user_pass ) . '</strong>' ); ?></p>
+	<p><?php printf( esc_html__( 'Your password has been automatically generated: %s', 'woocommerce' ), '<strong>' . esc_html( $user_pass ) . '</strong>' ); ?></p>
 <?php endif; ?>
-<p><?php printf( esc_html__('account omgeving: %3$s', 'woocommerce' ), esc_html( $blogname ), '<strong>' . esc_html( $user_login ) . '</strong>', make_clickable( esc_url( wc_get_page_permalink( 'myaccount' ) ) ) );?></p>
-
-<p>Mocht je vragen hebben of ergens tegenaan lopen, let me know. Stuur me een bericht via <a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>. Ik help je graag op weg.</p>
-<p>Heel veel plezier op je reis!</p>
-<p>Warme groet,</p>
-<p>Esther </p>
-
-<p>
-<strong>Ground Yourself</strong> <br />
-<a href="tel:0031650495212">0650495212</a> <br/>
-<a href='mailto:info@groundyourself.nl'>info@groundyourself.nl</a>
-<a href='https://groundyourself.nl'>groundyourself.nl</a>
-</p>
 
 <?php
 /**
