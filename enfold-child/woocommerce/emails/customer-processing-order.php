@@ -25,9 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
-<p><?php printf( 'Lieve %s,'), esc_html( $order->get_billing_first_name() ) ); ?></p>
+<p><?php printf( 'Lieve %s,', esc_html( $order->get_billing_first_name() ) ); ?></p>
 <p><?php printf( 'Dankjewel voor je bestelling! Leuk dat we samen aan de slag gaan. Je bestelling met de code #%s is ontvangen en wordt nu verwerkt.', esc_html( $order->get_order_number() ) ); ?></p>
-<p>Ik zal snel contact met je opnemen voor het vervolg van jouw reis. Dus houd je mailbox gaten. Heb je na drie werkdagen nog niks ontvangen, kijk eerst even in je spambox. Ook daar niks gevonden? Neem dan contact met me op via info@groundyourself.nl.</p>
+<p><?php printf( esc_html('Ik zal snel contact met je opnemen voor het vervolg van jouw reis. Dus houd je mailbox gaten. Heb je na drie werkdagen nog niks ontvangen, kijk eerst even in je spambox. Ook daar niks gevonden? Neem dan contact met me op via info@groundyourself.nl.')); ?></p>
 <?php
 
 /*
