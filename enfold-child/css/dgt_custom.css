@@ -154,8 +154,8 @@
     width: 3em;
     position: relative!important;
     display: none!important;
-    top: 50%;
-    left: 50%;
+    top: 50% !important;
+    left: 50% !important;
     margin-left: -.5em;
     margin-top: -.5em;
     content: "";
@@ -163,9 +163,17 @@
     -moz-animation: none;
     animation: none;
     background: url('https://groundyourself.nl/wp-content/themes/enfold-child/images/spinner.gif') center center;
-    background-size: cover;
+    background-image:  url('https://groundyourself.nl/wp-content/themes/enfold-child/images/spinner.gif') !important;
+    background-position: center 30% !important; 
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     line-height: 1;
-    text-align: center;
+    text-align: center !important;
     font-size: 2em;
+    z-index:999999 !important;
 }
+
+.processing .blockOverlay { 
+    position:fixed !important; 
+    left:0 !important;background-size: 120px !important; }
 
