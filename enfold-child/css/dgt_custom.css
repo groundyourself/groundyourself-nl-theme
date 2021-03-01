@@ -52,10 +52,12 @@
 }
 
 /* fix sizing and placement of learndash buttons */
+.wpProQuiz_button,
 .wpProQuiz_button:hover {
     text-transform: capitalize !important;
     font-size: 1em !important;
-    padding: .5em 1em !important;
+    padding: 5px 15px !important;
+    border-radius: 4px !important;
 }
 
 .gy_course_button a {
