@@ -78,9 +78,9 @@ a.wpProQuiz_button:hover {
 
 .learndash_mark_complete_button {
     margin-left: auto !important;
-    border-radius: 4px !important;
-    margin-top: 100px;
+    border-radius: 4px !important; 
     margin-bottom: -30px;
+    font-weight: bold;
 }
 
 /* restrict amount of days shown in momoyoga plugin */
