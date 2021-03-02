@@ -75,6 +75,10 @@ input.wpProQuiz_button:hover {
     text-transform: none !important;
 }
 
+.wpProQuiz_questionListItem input[type='submit'] {
+    border-radius: 4px !important;
+}
+
 /* fix sizing of inline button */
 
 .gy_course_button a {
@@ -86,6 +90,10 @@ input.wpProQuiz_button:hover {
 /* remove symbols from learndash when appropriate*/
 
 .lds-button .fa-angle-right {
+    display: none;
+}
+
+#lds-shortcode .m-lds-meta-item {
     display: none;
 }
 
