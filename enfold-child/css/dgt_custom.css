@@ -68,10 +68,29 @@ input.wpProQuiz_button:hover {
     text-transform: none !important;
 }
 
+.learndash a#quiz_continue_link,
+#learndash_next_prev_link a.next-link,
+#learndash_next_prev_link a.prev-link {
+    font-size: .8em !important;
+    text-transform: none !important;
+}
+
+/* fix sizing of inline button */
+
 .gy_course_button a {
     font-size: .9em !important;
     margin-top: 15px !important;
     font-weight: bold !important;
+}
+
+/* remove symbols from learndash when appropriate*/
+
+.lds-button .fa-angle-right {
+    display: none;
+}
+
+#lds-shortcode .lds-button:hover {
+    padding: 10px 25px 10px 25px !important;
 }
 
 .sfwd-mark-complete {
