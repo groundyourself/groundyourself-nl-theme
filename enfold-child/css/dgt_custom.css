@@ -54,7 +54,7 @@
 /* fix sizing and placement of learndash buttons */
 a.wpProQuiz_button,
 a.wpProQuiz_button:hover {
-    text-transform: capitalize !important;
+    text-transform: none !important;
     font-size: .7em !important;
     padding: .5em 1em !important;
     border-radius: 4px !important;
@@ -63,9 +63,9 @@ a.wpProQuiz_button:hover {
 input.wpProQuiz_button,
 input.wpProQuiz_button:hover {
     border-radius: 4px !important;
-    font-size: 1em !important;
+    font-size: .8em !important;
     padding: .5em 1em !important;
-    text-transform: capitalize !important;
+    text-transform: none !important;
 }
 
 .gy_course_button a {
