@@ -94,7 +94,7 @@ input.wpProQuiz_button:hover {
 }
 
 #lds-shortcode .m-lds-meta-item {
-    display: none;
+    display: none !important;
 }
 
 #lds-shortcode .lds-button:hover {
