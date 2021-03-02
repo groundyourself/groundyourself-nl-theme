@@ -60,6 +60,8 @@ a.wpProQuiz_button:hover {
     border-radius: 4px !important;
 }
 
+input[type='button'].wpProQuiz_button,
+input[type='button'].wpProQuiz_button:hover,
 input.wpProQuiz_button,
 input.wpProQuiz_button:hover {
     border-radius: 4px !important;
